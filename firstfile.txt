@@ -1,0 +1,14 @@
+"Today i learning various various command"
+for going on desktop cd OneDrive/desktop
+for create new folder mkdir foldername
+for going inside folder cd foldername
+for creating file in current open folder touch filename
+for seeing status of file git status
+for intialze git in folder git init 
+for making it tracked from untracked git add filename ( for a single file or for whole folder all untracked file we use   git add.)
+(differnce between init and add 
+init used to initialise git folder in your project so it can gitwork and it just commanded one time at start of folder 
+add used to track all untracked file things it used when any new change made )
+for saving git reposotier with any text  git commit -m "your message"
+for write inside project code filename
+for seeing what inside file cat filename
