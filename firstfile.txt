@@ -11,4 +11,4 @@ init used to initialise git folder in your project so it can gitwork and it just
 add used to track all untracked file things it used when any new change made )
 for saving git reposotier with any text  git commit -m "your message"
 for write inside project code filename
-for seeing what inside file cat filename
+for seeing what inside file cat filenamfor removing it from tracked to untracked like sometime we mistakenly do trackimg na so for untrack we can use (git restore --staged filename)
