@@ -10,5 +10,35 @@ for making it tracked from untracked git add filename ( for a single file or for
 init used to initialise git folder in your project so it can gitwork and it just commanded one time at start of folder 
 add used to track all untracked file things it used when any new change made )
 for saving git reposotier with any text  git commit -m "your message"
-for write inside project code filename
+for write inside project (code filename)
 for seeing what inside file cat filenamfor removing it from tracked to untracked like sometime we mistakenly do trackimg na so for untrack we can use (git restore --staged filename)
+for seeing all history of commit like what what changed have made we use (git log)
+git rm -rf filename  this used for permanently deleting all filething ( in real we should it very very carfully)
+git restore filename ( it used for restoring file but it will restore only when the file was commited before it file was not commited then it will permanently delte no restoring hpnd so always we should commit our file )
+git checkout <commithash> this used just for tempory look to your work how does it look befor this timee it not delte or clear current data it just seeing past temporyli 
+git revert <commit-hash> this command is used when u commit something on github but later u feel it break my code now u not want that so we simply used that it delet file from folder ... and unstage it but later if u want kii u want that code u can simply used restore command
+git reset --soft <commit-hash> it used when u locally made commit by misrake but now u want to reset them in new commit ( u use this only when u local commit file never used on github alreadt commit)
+git reset <commit-hash> it also used when u did wrong commitReal-World Scenario: You committed a set of changes, but realized you included a test file or configuration file by mistake that shouldn't have been committed yet.
+When to use: When you want to undo a local commit and unstage the files, keeping the file changes in your working folder to edit further.
+git reset --hard <commit-hash> it used when u want to remove all change made from that commoit You spent the last 3 hours writing code for an experimental feature, but it completely broke the project, turned into a mess, and you just want to throw it all away and restart from your last clean save point.
+When to use: When you want to wipe out all local changes and completely roll back your working directory to a previous good state.
+git revert <revert-commit-hash>Git creates a new commit that undoes the deletion, bringing the Discounts Page back into your project files completely resto for using undo our commit
+Stash 
+it used as temporary storage... i mean in the situation like u work new brach but mid of that u need to switch somewhere else or revert something so there is risk your current brach where u work can disrupt so for saving from this we semd pur current brand in stash ... it work for untrack file 
+git stash ( for going file in stash)
+git stash -u -m "My files save in stash" for saving file in stash
+git stash pop ( for taking out back our file from stash)
+git stash apply
+What it does: Applies your stashed changes back onto your project files, but keeps a copy in the stash vault
+ git stash list
+What it does: Shows a list of all stashes currently stored in your vault (e.g., stash@{0}, stash@{1})
+git stash drop / git stash clear
+What it does: git stash drop removes the most recent stash from the vault. git stash clear wipes out all stashes permanently.
+git stash list --date=local  List your stashes with dates (git stash list)
+Run this command to see all your stashes along with their exact creation dates:
+git stash show stash@{1}  See which files are inside that stash
+To check the list of files stored inside that specific stash (stash@{1}), run:
+Restore ONLY that specific file
+To bring back only your desired file from that stash (without touching any other files in that stash or wiping out your current work), run:
+git checkout stash@{1} -- path/to/your/filename.txt
+(Replace stash@{1} with your stash number and path/to/your/filename.txt with the exact file name/path).
