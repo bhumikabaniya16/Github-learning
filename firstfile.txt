@@ -75,3 +75,12 @@ Combine it into the previous commit without creating a new one:
 
 Bash
 git commit --amend -m "Added login form and styles"
+
+Scenario 3: You want to rename or move files cleanly
+Situation: You want to rename index_old.js to app.js without breaking Git tracking.
+
+Solution:
+
+Bash
+git mv index_old.js app.js
+git commit -m "Renamed index_old.js to app.js"
