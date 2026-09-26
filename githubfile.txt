@@ -1,0 +1,15 @@
+Github learning 
+
+steps for create repositery and track file inside it 
+
+step 1 : Create reporsotery on github account 
+step 2 copy the url of your repositery 
+step 3 on your cmd go to your all folder page commit eveything u done on
+step 4 use this command to link your folder to your github repositery 
+git remote add origin yourlink
+step 4 verify your doing 
+git remote -v 
+step 5 push all your new code there 
+git push -u origin main
+Now your all work will show on github 
+
