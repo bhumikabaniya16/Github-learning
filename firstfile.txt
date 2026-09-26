@@ -42,3 +42,22 @@ Restore ONLY that specific file
 To bring back only your desired file from that stash (without touching any other files in that stash or wiping out your current work), run:
 git checkout stash@{1} -- path/to/your/filename.txt
 (Replace stash@{1} with your stash number and path/to/your/filename.txt with the exact file name/path).
+Scenario 1: You're working on a feature and get called to fix an urgent bug
+Situation: You're halfway through writing code in app.js. Your code is incomplete, but your team needs an urgent bug fix on main. Git won't let you switch branches with uncommitted work.
+
+Solution:
+
+Stash your unfinished work:
+
+Bash
+git stash -u
+Switch to main and fix the bug:
+
+Bash
+git checkout main
+# Fix bug, commit, and push
+Switch back to your feature branch and restore your work:
+
+Bash
+git checkout feature-branch
+git stash pop
