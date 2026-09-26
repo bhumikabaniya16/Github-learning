@@ -124,3 +124,6 @@ Solution:
 Bash
 git reset --hard HEAD
 (Warning: This permanently discards all uncommitted local changes).
+
+You want to rename style.css to main.css. What is the fastest single command to rename the file and automatically stage it in Git?
+git checkout stash@{1} -- config.json
