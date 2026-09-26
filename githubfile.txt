@@ -12,4 +12,16 @@ git remote -v
 step 5 push all your new code there 
 git push -u origin main
 Now your all work will show on github 
+ 
+ Now we learn how to crate new branch 
+ see usually there are one branch main its extreamly imo where our most of the whole right execution code exist 
+ now we create new branch in real world we usulaly create din situation like when we want tto experiment things like trying so ething new thing so we cant do in main directly bcz its like presently something pubicly wothout undertanding itself 
+  command to use 
+  git checkout -b branchname  // this work for creating new branch and start working there 
+  now we want to switch back to our new branch we write command like 
+  git checkout whatverbranchuwant 
+   
+
+   Now we merge our files in real world we used when the situation like u working on new experiment and your experimen was right too now u can comfortabky merge with your head main branch 
+   git branch branchname // it will redirect us on yor folder
 
