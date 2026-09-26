@@ -61,3 +61,17 @@ Switch back to your feature branch and restore your work:
 Bash
 git checkout feature-branch
 git stash pop
+
+ Scenario 2: You made a typo or forgot to include a file in your last commit
+Situation: You ran git commit -m "Added login form", but then realized you forgot to include login.css or misspelled the commit message.
+
+Solution:
+
+Add the missing file to staging:
+
+Bash
+git add login.css
+Combine it into the previous commit without creating a new one:
+
+Bash
+git commit --amend -m "Added login form and styles"
