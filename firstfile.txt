@@ -99,3 +99,19 @@ Tell Git to track the new file:
 Bash
 git add config.json
 git commit -m "Created config.json from template"
+
+Scenario 5: You pushed a buggy commit to GitHub and need to undo it safely
+Situation: A commit you pushed to main broke a feature on the live website. Your team is also using main, so you cannot rewrite history with reset.
+
+Solution:
+
+Find the bad commit hash using git log.
+
+Revert the commit safely:
+
+Bash
+git revert <commit-hash>
+Push the fix to GitHub:
+
+Bash
+git push origin main
