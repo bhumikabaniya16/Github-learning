@@ -115,3 +115,12 @@ Push the fix to GitHub:
 
 Bash
 git push origin main
+
+Scenario 6: You want to throw away all local experiments and start fresh
+Situation: You spent 2 hours trying an experimental idea on your laptop. It turned into a mess, and you just want your code back to how it looked at your last saved commit.
+
+Solution:
+
+Bash
+git reset --hard HEAD
+(Warning: This permanently discards all uncommitted local changes).
