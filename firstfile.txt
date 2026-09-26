@@ -84,3 +84,18 @@ Solution:
 Bash
 git mv index_old.js app.js
 git commit -m "Renamed index_old.js to app.js"
+
+Scenario 4: You want to copy content from one file to another
+Situation: You want to copy all data from config.example.json into a new config.json file.
+
+Solution:
+
+Copy the file in terminal:
+
+Bash
+cp config.example.json config.json
+Tell Git to track the new file:
+
+Bash
+git add config.json
+git commit -m "Created config.json from template"
